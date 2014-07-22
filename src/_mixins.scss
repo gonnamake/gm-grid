@@ -1,0 +1,78 @@
+@function strip-unit($num) {
+    @return ($num / ($num * 0 + 1));
+}
+
+@mixin rem($property, $values...) {
+    $max: length($values);
+    $pxValues: '';
+    $remValues: '';
+
+    @for $i from 1 through $max {
+        @if nth($values, $i) != 'important' {
+
+            // $value: strip-unit(nth($values, $i));
+            $value: nth($values, $i);
+
+            @if unitless($value) == true {
+
+                $pxRounded: round(strip-unit($value) * 16);
+                $pxValues: #{$pxValues + $pxRounded}px;
+                $remValues: #{$remValues + $value}rem;
+
+            } @else {
+
+                $value: strip-unit($value);
+                $pxRounded: $value;
+                $pxValues: #{$pxValues + $pxRounded}px;
+                // $remVal: round($value / 16);
+                $remVal: ($value / 16);
+                $remValues: #{$remValues + $remVal}rem;
+
+            }
+        }
+
+        @if $i < $max {
+            $pxValues: #{$pxValues + " "};
+            $remValues: #{$remValues + " "};
+        }
+
+        @if $i == $max {
+            @if nth($values, $i) == 'important' {
+                $pxValues: #{$pxValues + " !important"};
+                $remValues: #{$remValues + " !important"};
+            }
+        }
+    }
+
+    #{$property}: $pxValues;
+    #{$property}: $remValues;
+}
+
+@mixin clearfix() {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// Grid
+@mixin block($num) {
+    width: (($gridWidth - ($gridGutterWidth * $num)) / $num / ($gridWidth / 100)) * 1%;
+}
+
+@mixin column($num) {
+    width: (($gridWidth - ($gridGutterWidth * ($num - 1))) / $num / ($gridWidth / 100)) * 1%;
+}
+
+@mixin columns($factor, $num) {
+    width: ((($gridWidth - ($gridGutterWidth * ($num - 1))) / $num / ($gridWidth / 100)) * $factor) + (($gridGutterWidth / ($gridWidth / 100)) * ($factor - 1)) * 1%;
+}
+
+@mixin column-push($num) {
+    left: ((($gridWidth - ($gridGutterWidth * ($num - 1))) / $num / ($gridWidth / 100)) + $gridGutterWidth/($gridWidth/100)) * 1%;
+}
+
+@mixin columns-push($factor, $num) {
+    left: (((($gridWidth - ($gridGutterWidth * ($num - 1))) / $num / ($gridWidth / 100)) * $factor) + (($gridGutterWidth / ($gridWidth / 100)) * ($factor - 1)) + $gridGutterWidth/($gridWidth/100)) * 1%;
+}

@@ -1,0 +1,413 @@
+<html>
+  <head>
+    <title>Gonnamake Grid(gm-grid)</title>
+    <link rel="stylesheet" href="../css/gm-grid.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300|Lobster+Two:400,700|Inconsolata' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+<div class="units-row">
+  <div class="unit-centered unit-40">
+    <h1>Gonnamake Grid</h1>
+  </div>
+</div>
+<div class="griddemo">
+
+<p>Gonnamake Grid is very simple to start. Instead of using traditional 12-Grid block, 16-block this relies on <strong>percentages</strong>.
+Each unit we will defined with percentage.
+</p>
+
+<div class="units-row">
+	<div class="unit-50">So this is Gonnamake Grid</div>
+	<div class="unit-50">Simple and sweet</div>
+</div>
+
+<pre>
+&lt;div class=&quot;units-row&quot;&gt;
+    &lt;div class=&quot;unit-50&quot;&gt;Hello world&lt;/div&gt;
+    &lt;div class=&quot;unit-50&quot;&gt;It's Kube Grid System&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<h2 id="toc-units">Units</h2>
+
+<p> Gonnamake grid uses general perferred units.</p>
+
+<!-- 100 -->
+<div class="units-row">
+	<div class="unit-100">unit-100</div>
+</div>
+
+<!-- 50 -->
+<div class="units-row">
+	<div class="unit-50">unit-50</div>
+	<div class="unit-50">unit-50</div>
+</div>
+
+<!-- 10/90 -->
+<div class="units-row">
+	<div class="unit-10">unit-10</div>
+	<div class="unit-90">unit-90</div>
+</div>
+
+
+<!-- 40/60 -->
+<div class="units-row">
+	<div class="unit-40">unit-40</div>
+	<div class="unit-60">unit-60</div>
+</div>
+
+<!-- 35/65 -->
+<div class="units-row">
+	<div class="unit-35">unit-35</div>
+	<div class="unit-65">unit-65</div>
+</div>
+
+<!-- 33/66 -->
+<div class="units-row">
+	<div class="unit-33">unit-33</div>
+	<div class="unit-66">unit-66</div>
+</div>
+
+<!-- 33 -->
+<div class="units-row">
+	<div class="unit-33">unit-33</div>
+	<div class="unit-33">unit-33</div>
+	<div class="unit-33">unit-33</div>
+</div>
+
+<!-- 30/70 -->
+<div class="units-row">
+	<div class="unit-30">unit-30</div>
+	<div class="unit-70">unit-70</div>
+</div>
+
+<!-- 25/75 -->
+<div class="units-row units-padding">
+	<div class="unit-25">unit-25</div>
+	<div class="unit-75">unit-75</div>
+</div>
+
+<!-- 25 -->
+<div class="units-row">
+	<div class="unit-25">unit-25</div>
+	<div class="unit-25">unit-25</div>
+	<div class="unit-25">unit-25</div>
+	<div class="unit-25">unit-25</div>
+</div>
+
+<!-- 20/80 -->
+<div class="units-row units-mobile-50">
+	<div class="unit-20">unit-20</div>
+	<div class="unit-80">unit-80</div>
+</div>
+
+<!-- 20 -->
+<div class="units-row">
+	<div class="unit-20">unit-20</div>
+	<div class="unit-20">unit-20</div>
+	<div class="unit-20">unit-20</div>
+	<div class="unit-20">unit-20</div>
+	<div class="unit-20">unit-20</div>
+</div>
+
+
+
+
+<h2 id="toc-start" >How it works</h2>
+
+<p class="pause">First, create a row that will contain blocks.</p>
+
+<pre>
+&lt;div class=&quot;units-row&quot;&gt;
+
+&lt;/div&gt;
+</pre>
+
+<p class="pause">Now add your desired number of blocks with appropriate sizes.</p>
+
+<pre>
+&lt;div class=&quot;units-row&quot;&gt;
+    &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-70&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<p class="pause">An example of multiple rows.</p>
+
+<pre>
+&lt;div class=&quot;units-row&quot;&gt;
+    &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-70&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;units-row&quot;&gt;
+    &lt;div class=&quot;unit-25&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-25&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-25&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-25&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<p class="pause">By default, each row has bottom margin of 1.618em, and if you don’t need this margin, do the following:</p>
+
+<pre>
+&lt;div class=&quot;units-row end&quot;&gt;
+    &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-70&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+<p class="pause">
+You can set any padding to the blocks using styles.
+Also, to make development faster and easier, you can use built-in class <code>units-padding</code> that provides block padding of 1.618em.
+</p>
+
+<pre>
+&lt;div class=&quot;units-row units-padding&quot;&gt;
+    &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-70&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<p class="pause">
+If you wish to add blocks without padding on the left and right, use&nbsp;<code>units-split</code>&nbsp;class:
+</p>
+
+<pre>
+&lt;div class=&quot;units-row units-split&quot;&gt;
+    &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-70&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<p class="pause">
+On mobile devices, all blocks will have unit-100 width for adaptiveness.
+If you need more precise controls over the width, use <code>units-mobile-50</code> class.
+It allows you to set unit-50 width on mobile devices for specific blocks.
+</p>
+
+<pre>
+&lt;div class=&quot;units-row units-mobile-50&quot;&gt;
+    &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;unit-70&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<p class="pause">
+If you need to wrap the whole layout or merge some rows, use <code>units-container</code>.
+This class is specifically developed for such use.
+You can give it any padding, margins or any other styles.</p>
+
+<pre>
+&lt;div class=&quot;units-container&quot;&gt;
+    &lt;div class=&quot;units-row&quot;&gt;
+        &lt;div class=&quot;unit-30&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;unit-70&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<!-- SPLIT -->
+<h2 id="toc-slipt-units" >Split units</h2>
+
+<!-- 40/60 -->
+<div class="units-row units-split">
+	<div class="unit-40">unit-40</div>
+	<div class="unit-60">unit-60</div>
+</div>
+
+<pre>
+&lt;div class=&quot;units-row units-split&quot;&gt;
+    &lt;div class=&quot;unit-40&quot;&gt;unit-40&lt;/div&gt;
+    &lt;div class=&quot;unit-60&quot;&gt;unit-60&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+<!-- 100 -->
+<div class="units-row units-split">
+	<div class="unit-100">unit-100</div>
+</div>
+
+<!-- 50 -->
+<div class="units-row units-split">
+	<div class="unit-50">unit-50</div>
+	<div class="unit-50">unit-50</div>
+</div>
+
+<!-- 40/60 -->
+<div class="units-row units-split">
+	<div class="unit-40">unit-40</div>
+	<div class="unit-60">unit-60</div>
+</div>
+
+<!-- 33/66 -->
+<div class="units-row units-split">
+	<div class="unit-33">unit-33</div>
+	<div class="unit-66">unit-66</div>
+</div>
+
+<!-- 33 -->
+<div class="units-row units-split">
+	<div class="unit-33">unit-33</div>
+	<div class="unit-33">unit-33</div>
+	<div class="unit-33">unit-33</div>
+</div>
+
+<!-- 30/70 -->
+<div class="units-row units-split">
+	<div class="unit-30">unit-30</div>
+	<div class="unit-70">unit-70</div>
+</div>
+
+<!-- 25/75 -->
+<div class="units-row units-split units-padding">
+	<div class="unit-25">unit-25</div>
+	<div class="unit-75">unit-75</div>
+</div>
+
+<!-- 25 -->
+<div class="units-row units-split">
+	<div class="unit-25">unit-25</div>
+	<div class="unit-25">unit-25</div>
+	<div class="unit-25">unit-25</div>
+	<div class="unit-25">unit-25</div>
+</div>
+
+<!-- 20/80 -->
+<div class="units-row units-split units-mobile-50">
+	<div class="unit-20">unit-20</div>
+	<div class="unit-80">unit-80</div>
+</div>
+
+<!-- 20 -->
+<div class="units-row units-split">
+	<div class="unit-20">unit-20</div>
+	<div class="unit-20">unit-20</div>
+	<div class="unit-20">unit-20</div>
+	<div class="unit-20">unit-20</div>
+	<div class="unit-20">unit-20</div>
+</div>
+
+
+<!-- NESTED -->
+<h2 id="toc-nested-units" >Nested units</h2>
+
+<div class="units-row">
+	<div class="unit-50 unit-demo-zero">
+		<div class="units-row end units-demo-light">
+			<div class="unit-20">unit-20</div>
+			<div class="unit-80">unit-80</div>
+		</div>
+		<div class="units-row end">
+			<div class="unit-70">unit-70</div>
+			<div class="unit-30">unit-30</div>
+		</div>
+	</div>
+	<div class="unit-50 unit-demo-zero">
+		<div class="units-row end units-demo-light">
+			<div class="unit-25">unit-25</div>
+			<div class="unit-25">unit-25</div>
+			<div class="unit-25">unit-25</div>
+			<div class="unit-25">unit-25</div>
+		</div>
+		<div class="units-row end">
+			<div class="unit-20">unit-20</div>
+			<div class="unit-20">unit-20</div>
+			<div class="unit-20">unit-20</div>
+			<div class="unit-20">unit-20</div>
+			<div class="unit-20">unit-20</div>
+		</div>
+	</div>
+</div>
+
+<pre>
+&lt;div class=&quot;units-row&quot;&gt;
+    &lt;div class=&quot;unit-50&quot;&gt;
+        &lt;div class=&quot;units-row end&quot;&gt;
+            &lt;div class=&quot;unit-20&quot;&gt;unit-20&lt;/div&gt;
+            &lt;div class=&quot;unit-80&quot;&gt;unit-80&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;units-row end&quot;&gt;
+            &lt;div class=&quot;unit-70&quot;&gt;unit-70&lt;/div&gt;
+            &lt;div class=&quot;unit-30&quot;&gt;unit-30&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;unit-50&quot;&gt;
+        &lt;div class=&quot;units-row end&quot;&gt;
+            &lt;div class=&quot;unit-25&quot;&gt;unit-25&lt;/div&gt;
+            &lt;div class=&quot;unit-25&quot;&gt;unit-25&lt;/div&gt;
+            &lt;div class=&quot;unit-25&quot;&gt;unit-25&lt;/div&gt;
+            &lt;div class=&quot;unit-25&quot;&gt;unit-25&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;units-row end&quot;&gt;
+            &lt;div class=&quot;unit-20&quot;&gt;unit-20&lt;/div&gt;
+            &lt;div class=&quot;unit-20&quot;&gt;unit-20&lt;/div&gt;
+            &lt;div class=&quot;unit-20&quot;&gt;unit-20&lt;/div&gt;
+            &lt;div class=&quot;unit-20&quot;&gt;unit-20&lt;/div&gt;
+            &lt;div class=&quot;unit-20&quot;&gt;unit-20&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<!-- CENTERED -->
+<h2 id="toc-centered">Centered</h2>
+
+
+<div class="units-row">
+	<div class="unit-centered unit-40">unit-40</div>
+</div>
+
+<pre>
+&lt;div class=&quot;units-row&quot;&gt;
+	&lt;div class=&quot;unit-centered unit-40&quot;&gt;unit-40&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+<!-- PUSH Right -->
+<h2 id="toc-push-right">Push right</h2>
+
+<div class="units-row">
+	<div class="unit-push-right unit-50">unit-50</div>
+</div>
+
+<pre>
+&lt;div class=&quot;units-row&quot;&gt;
+	&lt;div class=&quot;unit-push-right unit-50&quot;&gt;unit-50&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+<!-- Push -->
+<h2 id="toc-push-unit" >Push by unit</h2>
+
+
+<!-- push 50 -->
+<div class="units-row">
+	<div class="unit-push-50 unit-20">unit-20</div>
+</div>
+
+
+<pre>
+&lt;div class=&quot;units-row&quot;&gt;
+	&lt;div class=&quot;unit-push-50 unit-20&quot;&gt;unit-20&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<!-- push 20 -->
+<div class="units-row">
+	<div class="unit-push-20 unit-80">unit-80</div>
+</div>
+
+<pre>
+&lt;div class=&quot;units-row&quot;&gt;
+	&lt;div class=&quot;unit-push-20 unit-80&quot;&gt;unit-80&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+  </body>
+</html>

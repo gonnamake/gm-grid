@@ -1,0 +1,34 @@
+body{
+  background-color: #EA473A;
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  font-weight:300;
+}
+
+pre{
+  background:rgba(0,0,0,0.5);
+  font-family: 'Inconsolata', sans-serif;
+  padding: 20px;
+  border-radius:10px;
+  font-size:0.8em;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Lobster Two', cursive;
+}
+
+h1{
+  text-align:center;
+  font-weight: 700;
+}
+
+.griddemo .unit-100, .griddemo .unit-90, .griddemo .unit-80, .griddemo .unit-75, .griddemo .unit-70, .griddemo .unit-66, .griddemo .unit-65, .griddemo .unit-60, .griddemo .unit-50, .griddemo .unit-40, .griddemo .unit-35, .griddemo .unit-33, .griddemo .unit-30, .griddemo .unit-25, .griddemo .unit-20, .griddemo .unit-10, .griddemo .blocks-2>li, .griddemo .blocks-3>li, .griddemo .blocks-4>li, .griddemo .blocks-5>li, .griddemo .blocks-6>li {
+  text-align: center;
+  font-size: 14px;
+  padding: 15px 0;
+  font-weight: 400;
+  color: #FFF;
+  background: rgba(255,255,255,0.2);
+  border-radius:5px;
+  line-height: 1;
+}
