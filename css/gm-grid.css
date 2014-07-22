@@ -300,12 +300,16 @@ select.width-100, select.unit-100 {
     float: none;
     margin-left: 0;
     width: 100%; }
-  .blocks-mobile-50 > li, .blocks-mobile-33 > li {
+  .blocks-mobile-50 > li, .blocks-mobile-33 > li, .blocks-mobile-25 > li, .blocks-mobile-20 > li {
     float: left;
     margin-left: 3%; }
-  .blocks-mobile-33, .blocks-mobile-50 {
+  .blocks-mobile-33, .blocks-mobile-50, .blocks-mobile-25, .blocks-mobile-20 {
     margin-left: -3%; }
   .blocks-mobile-50 > li {
     width: 47%; }
   .blocks-mobile-33 > li {
-    width: 30.33333%; } }
+    width: 30.33333%; }
+  .blocks-mobile-25 > li {
+    width: 22%; }
+  .blocks-mobile-20 > li {
+    width: 17%; } }

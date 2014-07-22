@@ -409,5 +409,216 @@ You can give it any padding, margins or any other styles.</p>
 &lt;/div&gt;
 </pre>
 
+
+
+<h1 id="blocks">Blocks</h1>
+
+<h2>Two blocks</h2>
+
+<ul class="blocks-2">
+	<li>50%</li>
+	<li>50%</li>
+</ul>
+
+<pre>
+&lt;ul class=&quot;blocks-2&quot;&gt;
+    &lt;li&gt;50%&lt;/li&gt;
+    &lt;li&gt;50%&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+
+<h2>Three blocks</h2>
+
+<ul class="blocks-3">
+	<li>33%</li>
+	<li>33%</li>
+	<li>33%</li>
+</ul>
+
+<pre>
+&lt;ul class=&quot;blocks-3&quot;&gt;
+    &lt;li&gt;33%&lt;/li&gt;
+    &lt;li&gt;33%&lt;/li&gt;
+    &lt;li&gt;33%&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<h2>Four blocks</h2>
+
+<ul class="blocks-4">
+	<li>25%</li>
+	<li>25%</li>
+	<li>25%</li>
+	<li>25%</li>
+</ul>
+
+<pre>
+&lt;ul class=&quot;blocks-4&quot;&gt;
+    &lt;li&gt;25%&lt;/li&gt;
+    &lt;li&gt;25%&lt;/li&gt;
+    &lt;li&gt;25%&lt;/li&gt;
+    &lt;li&gt;25%&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<h2>Five blocks</h2>
+
+<ul class="blocks-5">
+	<li>20%</li>
+	<li>20%</li>
+	<li>20%</li>
+	<li>20%</li>
+	<li>20%</li>
+</ul>
+
+<pre>
+&lt;ul class=&quot;blocks-5&quot;&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<h2>Six blocks</h2>
+
+<ul class="blocks-6">
+	<li>16.6%</li>
+	<li>16.6%</li>
+	<li>16.6%</li>
+	<li>16.6%</li>
+	<li>16.6%</li>
+	<li>16.6%</li>
+</ul>
+
+<pre>
+&lt;ul class=&quot;blocks-6&quot;&gt;
+    &lt;li&gt;16.6%&lt;/li&gt;
+    &lt;li&gt;16.6%&lt;/li&gt;
+    &lt;li&gt;16.6%&lt;/li&gt;
+    &lt;li&gt;16.6%&lt;/li&gt;
+    &lt;li&gt;16.6%&lt;/li&gt;
+    &lt;li&gt;16.6%&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<h2>Different sizes</h2>
+
+<p>When the blocks has different sizes use .block-first on the next line.</p>
+
+<ul class="blocks-5">
+	<li>20%</li>
+	<li>20%</li>
+	<li style="padding: 50px;">20%</li>
+	<li>20%</li>
+	<li>20%</li>
+
+	<li class="block-first">20%</li>
+	<li>20%</li>
+	<li>20%</li>
+	<li>20%</li>
+	<li>20%</li>
+</ul>
+
+<pre>
+&lt;ul class=&quot;blocks-5&quot;&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+    &lt;li style=&quot;padding: 50px;&quot;&gt;20%&lt;/li&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+
+    &lt;li class=&quot;block-first&quot;&gt;20%&lt;/li&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+
+<h2>Mobile helpers</h2>
+
+<p>
+You can specify custom behavior for the width of the blocks on mobile devices.
+Specify .blocks-mobile-20,.blocks-mobile-25,.blocks-mobile-33 and .blocks-mobile-50 and then blocks on mobile devices will be the width of 20%,25%,33% or 50%,
+regardless of the original blocks width.
+</p>
+
+<ul class="blocks-3 blocks-mobile-50">
+	<li>33%</li>
+	<li>33%</li>
+	<li>33%</li>
+</ul>
+
+<pre>
+&lt;ul class=&quot;blocks-3 blocks-mobile-50&quot;&gt;
+    &lt;li&gt;33%&lt;/li&gt;
+    &lt;li&gt;33%&lt;/li&gt;
+    &lt;li&gt;33%&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+
+<ul class="blocks-4 blocks-mobile-33">
+  <li>25%</li>
+  <li>25%</li>
+  <li>25%</li>
+  <li>25%</li>
+</ul>
+
+<pre>
+&lt;ul class=&quot;blocks-4 blocks-mobile-33&quot;&gt;
+    &lt;li&gt;25%&lt;/li&gt;
+    &lt;li&gt;25%&lt;/li&gt;
+    &lt;li&gt;25%&lt;/li&gt;
+    &lt;li&gt;25%&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+
+<ul class="blocks-5 blocks-mobile-25">
+  <li>20%</li>
+  <li>20%</li>
+  <li>20%</li>
+  <li>20%</li>
+  <li>20%</li>
+</ul>
+
+<pre>
+&lt;ul class=&quot;blocks-5 blocks-mobile-25&quot;&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+    &lt;li&gt;20%&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+
+<ul class="blocks-6 blocks-mobile-20">
+  <li>17%</li>
+  <li>17%</li>
+  <li>17%</li>
+  <li>17%</li>
+  <li>17%</li>
+  <li>17%</li>
+</ul>
+
+<pre>
+&lt;ul class=&quot;blocks-6 blocks-mobile-20&quot;&gt;
+    &lt;li&gt;17%&lt;/li&gt;
+    &lt;li&gt;17%&lt;/li&gt;
+    &lt;li&gt;17%&lt;/li&gt;
+    &lt;li&gt;17%&lt;/li&gt;
+    &lt;li&gt;17%&lt;/li&gt;
+    &lt;li&gt;17%&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+
+
   </body>
 </html>
